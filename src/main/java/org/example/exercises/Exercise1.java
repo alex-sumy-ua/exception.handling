@@ -1,15 +1,17 @@
 package org.example.exercises;
 
+import org.example.exercises.exceptions.NegativeIntegerInputException;
+
 public class Exercise1 {
 
-    public static int divide(int a, int b) {
-        if (a < 0) {
-            throw new NegativeIntegerInputException("The following negative integer(s) are not allowed in this operation: [" + a + "]");
+    public static int divide(int divident, int divisor) {
+        if (divident < 0) {
+            throw new NegativeIntegerInputException("The following negative integer(s) are not allowed in this operation: [" + divident + "]");
         }
-        if (b < 0) {
-            throw new NegativeIntegerInputException("The following negative integer(s) are not allowed in this operation: [" + b + "]");
+        if (divisor < 0) {
+            throw new NegativeIntegerInputException("The following negative integer(s) are not allowed in this operation: [" + divisor + "]");
         }
-        return a / b;
+        return divident / divisor;
 
     }
 }

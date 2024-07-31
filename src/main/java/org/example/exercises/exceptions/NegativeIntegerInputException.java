@@ -1,4 +1,4 @@
-package org.example.exercises;
+package org.example.exercises.exceptions;
 
 
 public class NegativeIntegerInputException extends IllegalArgumentException {
