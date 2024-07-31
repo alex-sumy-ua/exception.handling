@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.exercises.*;
+import org.example.warehouse.Warehouse;
 
 public class Main {
     public static void main(String[] args) {
@@ -21,7 +22,10 @@ public class Main {
 //            System.out.println("Oops, we're out of space on the stack. Goodnight.");
 //        }
 
-        Exercise5.healthInsuranceDataInput();
+//        Exercise5.healthInsuranceDataInput();
+
+        Warehouse wh = new Warehouse();
+        wh.main(new String[]{});
 
     }
 
